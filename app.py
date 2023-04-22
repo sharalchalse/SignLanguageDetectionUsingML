@@ -58,7 +58,7 @@ with mp_hands.Hands(
 
         try: 
             if len(sequence) == 30:
-                res = model.predict(np.expand_dims(sequence, axis=0))[0]
+                res = model.predict(np.expand_dims(sequence,axis=0))[0]
                 print(actions[np.argmax(res)])
                 predictions.append(np.argmax(res))
                 
